@@ -1,5 +1,10 @@
 buildscript {
 	dependencies {
+		// *** Needed for M1 Macbook - remove if not needed ***
+		classpath group: "com.github.docker-java", name: "docker-java-core", version: "3.3.1"
+		classpath group: "com.github.docker-java", name: "docker-java", version: "3.3.1"
+		classpath group: "com.github.docker-java", name: "docker-java-transport-httpclient5", version: "3.3.1"
+		// *** END ***
 		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "12.0.0"
 	}
 
